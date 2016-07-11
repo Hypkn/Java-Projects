@@ -29,9 +29,6 @@ public class ChangingSun extends PApplet{
 	public int[] sunColorSec(float seconds){
 		
 		int[] rgb = new int [3];
-		//Scale the brightness of the yellow based on the seconds. 0 seconds 
-		//is black. 30 seconds is bright yellow 
-		
 		
 		float diffFrom30 = Math.abs(30-seconds);
 		
@@ -41,7 +38,7 @@ public class ChangingSun extends PApplet{
 		rgb[1] = (int)(255 * ratio);
 		rgb[2] = 0;
 		
-		//System.out.println("Red" + rgb[0] + "G" + rgb[1] + "Blue" + rgb[2]);
+		System.out.println("Red" + rgb[0] + "G" + rgb[1] + "Blue" + rgb[2]);
 		
 		return rgb;
 		
